@@ -28,6 +28,7 @@
           <div>
             <label for="name">Name:</label>
             <input
+              readonly
               type="text"
               name="name"
               id="name"
@@ -37,17 +38,17 @@
 
           <div>
             <label for="age">My Age:</label>
-            <input type="number" name="age" id="age" value="18" />
+            <input readonly type="number" name="age" id="age" value="18" />
           </div>
 
           <div>
             <label for="date">My Birthday:</label>
-            <input type="date" name="date" id="date" value="2008-02-22" />
+            <input readonly type="date" name="date" id="date" value="2008-02-22" />
           </div>
 
           <div>
             <label for="about">Bio:</label>
-            <textarea id="about" name="about" rows="4" cols="50">about Me</textarea>
+            <textarea readonly id="about" name="about" rows="4" cols="50">about Me</textarea>
           </div>
         </form>
 
@@ -87,7 +88,6 @@
             id="contactMeEmail"
             placeholder="Enter your email"
           />
-          <button type="submit">Send</button>
         </form>
       </section>
 
