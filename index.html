@@ -25,41 +25,42 @@
       <section>
         <h2>About Me</h2>
         <form>
-            <div>
-              <label for="name">Name:</label>
-              <input
-                readonly
-                type="text"
-                name="name"
-                id="name"
-                value="My name is aleksandre bochorishvili."
-              />
-            </div>
+          <div>
+            <label for="name">Name:</label>
+            <input
+              readonly
+              type="text"
+              name="name"
+              id="name"
+              value="My name is aleksandre bochorishvili."
+            />
+          </div>
 
-            <div>
-              <label for="age">My Age:</label>
-              <input readonly type="number" name="age" id="age" value="18" />
-            </div>
+          <div>
+            <label for="age">My Age:</label>
+            <input readonly type="number" name="age" id="age" value="18" />
+          </div>
 
-            <div>
-              <label for="date">My Birthday:</label>
-              <input
-                readonly
-                type="date"
-                name="date"
-                id="date"
-                value="2008-02-22"
-              />
-            </div>
+          <div>
+            <label for="date">My Birthday:</label>
+            <input
+              readonly
+              type="date"
+              name="date"
+              id="date"
+              value="2008-02-22"
+            />
+          </div>
 
-            <div>
-              <label for="about">Bio:</label>
-              <textarea readonly id="about" name="about" rows="4" cols="50">about Me</textarea
-              >
-            </div>
+          <div>
+            <label for="about">Bio:</label>
+            <textarea readonly id="about" name="about" rows="4" cols="50">
+about Me</textarea
+            >
+          </div>
         </form>
 
-        <img src="/images/images.jpg" alt="Description of the image" />
+        <img src="./images/images.jpg" alt="Freedom" />
       </section>
 
       <!-- სექცია ჰობებისა და ციტატებისთვის -->
@@ -89,7 +90,7 @@
         </p>
 
         <!-- საკონტაქტო ფორმა -->
-        <form>
+        <form style="display: flex; flex-direction: column; width: 25%; gap: px;">
           <label for="contactMeEmail">Send me a message (Your Email):</label>
           <input
             type="email"
@@ -97,7 +98,14 @@
             id="contactMeEmail"
             placeholder="Enter your email"
           />
-          <input type="submit" for="contactMeEmail" value="Send" />
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+
+          <label for="message">Message:</label>
+          <textarea id="message"></textarea>
+
+          <button type="submit">Send</button>
         </form>
       </section>
       <p>&copy; 2024 My Website. All rights reserved.</p>
